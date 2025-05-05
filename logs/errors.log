@@ -1,0 +1,313 @@
+2025-05-04 14:10:00,152 - INFO - logging in using static token
+2025-05-04 14:10:01,357 - INFO - Shard ID None has connected to Gateway (Session ID: 267b3c1006b2c7f3b80eead3423d4e8b).
+2025-05-04 14:14:23,860 - INFO - logging in using static token
+2025-05-04 14:14:25,075 - INFO - Shard ID None has connected to Gateway (Session ID: 0dacb4cd0a49efbaf6178859a0b68393).
+2025-05-04 14:15:37,348 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 14:15:43,807 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 14:16:10,119 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 14:19:55,079 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 14:20:33,295 - INFO - logging in using static token
+2025-05-04 14:20:34,484 - INFO - Shard ID None has connected to Gateway (Session ID: d151ba4e0100539e89ee408539cd0591).
+2025-05-04 14:20:40,172 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 15:21:42,566 - WARNING - Shard ID None has stopped responding to the gateway. Closing and restarting.
+2025-05-04 15:21:42,570 - ERROR - Attempting a reconnect in 1.78s
+Traceback (most recent call last):
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 868, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\discord\client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 489, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\discord\gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\discord\http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\client.py", line 1004, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-b.discord.gg:443 ssl:default [getaddrinfo failed]
+2025-05-04 15:21:44,678 - ERROR - Attempting a reconnect in 1.86s
+Traceback (most recent call last):
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 868, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\discord\client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 489, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\discord\gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\discord\http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\client.py", line 1004, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-b.discord.gg:443 ssl:default [getaddrinfo failed]
+2025-05-04 15:21:46,575 - ERROR - Attempting a reconnect in 2.38s
+Traceback (most recent call last):
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 868, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\discord\client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 489, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\discord\gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\discord\http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\client.py", line 1004, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\aiohttp\connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-b.discord.gg:443 ssl:default [getaddrinfo failed]
+2025-05-04 15:21:49,332 - INFO - Shard ID None session has been invalidated.
+2025-05-04 15:21:55,108 - INFO - Shard ID None has connected to Gateway (Session ID: c01203e99aec763ed128ad208616a17c).
+2025-05-04 16:19:53,386 - WARNING - Shard ID None has stopped responding to the gateway. Closing and restarting.
+2025-05-04 16:19:53,759 - INFO - Shard ID None session has been invalidated.
+2025-05-04 16:19:59,336 - INFO - Shard ID None has connected to Gateway (Session ID: f4c7840e76283b8fc97031f7933c8c91).
+2025-05-04 16:20:11,519 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 16:34:28,157 - INFO - logging in using static token
+2025-05-04 16:34:29,219 - INFO - Shard ID None has connected to Gateway (Session ID: 709df2a0357a73111500edbc3093daa4).
+2025-05-04 16:34:49,586 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 16:42:13,708 - INFO - logging in using static token
+2025-05-04 16:42:15,713 - INFO - Shard ID None has connected to Gateway (Session ID: ba1ea73447333f893b87212d6b8abac8).
+2025-05-04 16:42:48,446 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 16:48:07,321 - INFO - logging in using static token
+2025-05-04 16:48:08,318 - INFO - Shard ID None has connected to Gateway (Session ID: c6bb4e379ec768676319ab4038269198).
+2025-05-04 16:48:16,745 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 16:50:50,310 - INFO - logging in using static token
+2025-05-04 16:50:52,614 - INFO - Shard ID None has connected to Gateway (Session ID: 6b44874f5494baa49eaa1cbaf6f283ce).
+2025-05-04 16:50:57,445 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 16:59:21,393 - INFO - logging in using static token
+2025-05-04 16:59:29,651 - INFO - Shard ID None has connected to Gateway (Session ID: 5ce683ad12bb4550afbe2b615fea2ba8).
+2025-05-04 16:59:48,844 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 17:50:44,565 - INFO - logging in using static token
+2025-05-04 17:50:46,648 - INFO - Shard ID None has connected to Gateway (Session ID: 2d1bc036e754ec0b1b4e0d09727e63df).
+2025-05-04 17:50:53,288 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 17:52:11,478 - INFO - logging in using static token
+2025-05-04 17:52:12,508 - INFO - Shard ID None has connected to Gateway (Session ID: f5e59505d87623bd7862de66d8929b4b).
+2025-05-04 17:52:20,300 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 17:53:07,077 - INFO - logging in using static token
+2025-05-04 17:53:08,152 - INFO - Shard ID None has connected to Gateway (Session ID: d28f2e0b28774abe1c86070747f6742f).
+2025-05-04 17:53:20,412 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 17:53:29,655 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 17:53:35,923 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 17:56:10,145 - INFO - logging in using static token
+2025-05-04 17:56:11,318 - INFO - Shard ID None has connected to Gateway (Session ID: 45f09320f65cc0afb9adbb832a2818b3).
+2025-05-04 17:56:17,465 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 17:56:28,846 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 17:57:50,652 - INFO - logging in using static token
+2025-05-04 17:57:51,674 - INFO - Shard ID None has connected to Gateway (Session ID: 2012627db5390dfb1223c930e5ba8754).
+2025-05-04 17:57:59,299 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 17:58:16,012 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 18:00:17,595 - INFO - logging in using static token
+2025-05-04 18:00:18,727 - INFO - Shard ID None has connected to Gateway (Session ID: 647b428dbaac87f57cf20f618b41f9c1).
+2025-05-04 18:00:25,137 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 18:00:47,827 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 18:00:54,159 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 18:02:40,269 - INFO - logging in using static token
+2025-05-04 18:02:43,117 - INFO - Shard ID None has connected to Gateway (Session ID: f2834dc1a9e13538bc9ffda996cf0ebe).
+2025-05-04 18:03:03,814 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 18:03:37,529 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 18:07:22,265 - INFO - logging in using static token
+2025-05-04 18:07:23,361 - INFO - Shard ID None has connected to Gateway (Session ID: 1a6f6ca6463b20f270decfb12cb7c7d1).
+2025-05-04 18:07:34,955 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 18:08:11,427 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 18:10:29,819 - INFO - logging in using static token
+2025-05-04 18:10:30,869 - INFO - Shard ID None has connected to Gateway (Session ID: a8b35d30f1ee242a22c21d06e1ae8af4).
+2025-05-04 18:23:25,206 - ERROR - Erro ao responder mensagem: '_type'
+2025-05-04 18:25:21,892 - INFO - logging in using static token
+2025-05-04 18:25:22,946 - INFO - Shard ID None has connected to Gateway (Session ID: f30b113370cf873fa856bedd9cdb74f3).
+2025-05-04 18:25:26,599 - ERROR - Erro ao responder mensagem:
+Traceback (most recent call last):
+  File "e:\gibra\Coding\atlas\bot.py", line 43, in on_message
+    resposta = await ask_openai_assistant(message.content)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\utils\openai_utils.py", line 24, in ask_openai_assistant
+    contexto = search_knowledge_base(question)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\utils\vector_utils.py", line 18, in search_knowledge_base
+    vectordb = get_vectordb()
+               ^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\utils\vector_utils.py", line 11, in get_vectordb
+    return Chroma(
+           ^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\langchain_chroma\vectorstores.py", line 337, in __init__
+    self.__ensure_collection()
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\langchain_chroma\vectorstores.py", line 344, in __ensure_collection
+    self._chroma_collection = self._client.get_or_create_collection(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\chromadb\api\client.py", line 194, in get_or_create_collection
+    model = self._server.get_or_create_collection(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 150, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\chromadb\api\segment.py", line 103, in wrapper
+    return self._rate_limit_enforcer.rate_limit(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\chromadb\rate_limit\simple_rate_limit\__init__.py", line 24, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\chromadb\api\segment.py", line 288, in get_or_create_collection
+    return self.create_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 150, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\chromadb\api\segment.py", line 103, in wrapper
+    return self._rate_limit_enforcer.rate_limit(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\chromadb\rate_limit\simple_rate_limit\__init__.py", line 24, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\chromadb\api\segment.py", line 242, in create_collection
+    coll, created = self._sysdb.create_collection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 150, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\chromadb\db\mixins\sysdb.py", line 294, in create_collection
+    existing = self.get_collections(name=name, tenant=tenant, database=database)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 150, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\chromadb\db\mixins\sysdb.py", line 521, in get_collections
+    configuration = self._load_config_from_json_str_and_migrate(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\chromadb\db\mixins\sysdb.py", line 886, in _load_config_from_json_str_and_migrate
+    return CollectionConfigurationInternal.from_json_str(json_str)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\chromadb\api\configuration.py", line 188, in from_json_str
+    return cls.from_json(config_json)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\gibra\Coding\atlas\.venv\Lib\site-packages\chromadb\api\configuration.py", line 209, in from_json
+    f"Trying to instantiate configuration of type {cls.__name__} from JSON with type {json_map['_type']}"
+                                                                                      ~~~~~~~~^^^^^^^^^
+KeyError: '_type'
+2025-05-04 18:26:59,570 - INFO - logging in using static token
+2025-05-04 18:27:00,606 - INFO - Shard ID None has connected to Gateway (Session ID: 7ad977222ee92d1fb0bff26a7d3f67f9).
+2025-05-04 18:29:59,135 - INFO - logging in using static token
+2025-05-04 18:30:00,235 - INFO - Shard ID None has connected to Gateway (Session ID: 0ecca9234ac702db58a776d082c40bd2).
+2025-05-04 18:31:35,633 - INFO - logging in using static token
+2025-05-04 18:31:37,037 - INFO - Shard ID None has connected to Gateway (Session ID: 03f5c6e3b3e8fed8b6bc396fffe29d29).
+2025-05-04 18:34:39,398 - INFO - logging in using static token
+2025-05-04 18:34:40,435 - INFO - Shard ID None has connected to Gateway (Session ID: 078a237281869010dbe470ef5eb96ad4).
+2025-05-04 18:43:10,135 - INFO - logging in using static token
+2025-05-04 18:43:11,318 - INFO - Shard ID None has connected to Gateway (Session ID: ad654cb2518a3a3901838a477013b72f).
