@@ -1,9 +1,11 @@
+import os
+from dotenv import load_dotenv
 from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings
 
+load_dotenv()
 
-
-embedding = OpenAIEmbeddings()
+embedding = OpenAIEmbeddings(openai_api_key=os.getenv("OPENAI_API_KEY"))
 
 
 def get_vectordb():
