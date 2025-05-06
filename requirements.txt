@@ -7,6 +7,6 @@ langchain-core==0.1.50
 langchain-openai==0.1.6
 langchain-community==0.0.34
 langchain-chroma==0.1.0
-openai==1.23.2
+openai
 pydantic==2.7.1
 python-dotenv==1.0.1
